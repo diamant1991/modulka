@@ -1,0 +1,274 @@
+/*==================   Accordion    ======================*/
+.accordion {
+  min-width: 175px;
+}
+
+.accordion_header {
+    display: table;
+    margin-top: 1px;
+    text-transform: uppercase;
+    background: $secondary3;
+    width: 100%;
+    height: 70px;
+    text-align: left;
+    padding-left: 60px;
+    vertical-align: middle;
+    line-height: 20px;
+    @include transition(0.3s);
+
+    span {
+      display: table-cell;
+      font-family: $font;
+      color:$default;
+      vertical-align: middle;
+      position: relative;
+
+         &:after {
+          content:"";
+          position: absolute;
+          top: 20px;
+          left: -45px;
+          display: block;
+          width: 36px;
+          height: 29px;
+          background: center center;
+      }
+    }
+
+    &:hover {
+      background: $primary;
+    }
+
+    .icon-1 {
+
+        &:after {
+            background: url("../images/tabs-icon.png") no-repeat;
+        }
+    }
+
+   .icon-2 {
+        &:after {
+            background: url("../images/tabs-icon2.png") no-repeat;
+        }
+    }
+
+   .icon-3 {
+        &:after {
+            background: url("../images/tabs-icon3.png") no-repeat;
+        }
+    }
+
+    .icon-4 {
+        &:after {
+            background: url("../images/tabs-icon4.png") no-repeat;
+        }
+    }
+}
+
+.accordion_cnt {
+
+}
+
+.ui-accordion-header {
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    // content:"";
+  }
+
+  &-active {
+    background: $primary;
+  }
+}
+
+
+.accordion-1 {
+
+  .ui-accordion-header {
+    position: relative;
+    cursor: pointer;
+
+
+
+    &:after {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      content:"";
+      display: block;
+      width: 12px;
+      height: 6px;
+      background: url("../images/arrow_down.png") no-repeat;
+    }
+
+    &-active span {
+      color:$primary;
+    }
+
+      &-active:after {
+        background: url("../images/arrow_up.png") no-repeat;
+      }
+    }
+
+  .accordion_cnt {
+
+    ul {
+
+
+      li {
+        display: table;
+        margin-top: 1px;
+        width: 100%;
+        height: 40px;
+        vertical-align: middle;
+        line-height: 30px;
+        @include transition(0.3s);
+        padding-left: 30px;
+
+        a {
+
+          display: table-cell;
+          vertical-align: middle;
+          font-family: $default-font;
+          color:$secondary5;
+          position: relative;
+
+          span {
+            color: $secondary7;
+            @include transition(0.3s);
+          }
+
+          &:before {
+            content:"";
+            position: absolute;
+            top: 18px;
+            left: -18px;
+            display: block;
+            width: 5px;
+            height: 5px;
+            background: #a1a1a1;
+            @include transition(0.3s);
+          }
+
+          &:after {
+            display: none;
+          }
+        }
+
+        &:hover a,
+        &:hover a span {
+            color: $primary;
+          }
+        &:hover a:before {
+          background: $primary;
+        }
+      }
+    }
+  }
+}
+
+.accordion_header-1 {
+
+    display: table;
+    margin-top: 1px;
+    text-transform: none;
+    background: #f5f5f5;
+    width: 100%;
+    height: 40px;
+    vertical-align: middle;
+    padding-left: 15px;
+    // line-height: 30px;
+
+    span {
+      display: table-cell;
+      font-family: $default-font;
+      color:$secondary5;
+      vertical-align: middle;
+      position: relative;
+      line-height: 37px;
+      @include transition(0.3s);
+
+      span {
+        display: inline-block;
+        color: $secondary7;
+      }
+    }
+
+    &:hover span {
+      @include transition(0.5s);
+      color: $primary;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: $fa-caret-down;
+      color: $primary;
+      font: 400 20px/20px $fa;
+    }
+}
+
+
+.accordion-2 {
+
+  .accordion_title {
+    outline: 1px solid $secondary6;
+    width: 100%;
+    min-width: 135px;
+    min-height: 56px;
+    margin-top: 11px;
+    padding: 9px 31px 8px 58px;
+
+    &__cnt {
+        position: relative;
+        line-height: 20px;
+        text-indent: 7px;
+
+      b {
+        display: inline-block;
+        margin-top: 8px;
+      }
+
+       &:before {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: -40px;
+            display: block;
+            width: 37px;
+            height: 37px;
+          }
+      }
+
+
+      .type-1:before {
+        background-image: url('../images/icon-16.png');
+      }
+      .type-2:before {
+        background-image: url('../images/icon-14.png');
+      }
+  }
+  .ui-accordion-header-active {
+    outline: 1px solid $primary;
+    background: transparent;
+
+    .type-1:before {
+        background-image: url('../images/icon-13.png');
+      }
+
+      .type-2:before {
+        background-image: url('../images/icon-15.png');
+      }
+
+  }
+
+  .accordion_cnt-box {
+      margin-top: 10px;
+      padding: 10px 0 23px;
+  }
+
+}
+
+

@@ -1,0 +1,128 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+/*==================     Subscribe Form     ======================*/
+// $form-height: 32px;
+$form-border: 1px solid #dbdbdb;
+$form-color: #9f9f9f;
+$form-bg: #fff;
+
+$email-width: 100%;
+$name-width: $email-width;
+
+//--------------------------------------------------------------
+//                      Subscribe Form
+//--------------------------------------------------------------
+.subscribe-form {
+  margin-top: 20px;
+  position: relative;
+  display: block;
+
+
+  label {
+    display: inline-block;
+    position: relative;
+    // padding: (($form-height - 22)/2) 10px (($form-height - 22)/2);
+    background: $form-bg;
+    border: $form-border;
+    padding: 3px 20px;
+    min-height: 30px;
+    @include box-sizing(border-box);
+    @include border-radius(5px);
+
+  }
+
+  label.name {
+    max-width: $name-width;
+  }
+
+  label.email {
+    width: $email-width;
+    min-width: 200px;
+  }
+
+  input {
+    @include reset-input();
+    color: $form-color;
+    display:inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1;
+    // height: 22px;
+    vertical-align: middle;
+}
+  a[data-type="submit"] {
+    display: inline-block;
+    // padding: 10px 20px;
+    // text-align: center;
+    // background: $secondary;
+    // color: #FFF;
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/form-arrow.png") no-repeat center center;
+
+     &:hover:after {
+      display: none;
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                         Messages
+//--------------------------------------------------------------
+.subscribe-form {
+  .error, .success {
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -10px;
+    text-align: left;
+    padding: 4px 10px;
+    left: 5px;
+    right: 5px;
+    font-size: 10px;
+    line-height: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: $secondary2;
+  }
+
+  .error {
+    display: none;
+    color: #f00;
+    overflow: hidden;
+    @include transition(.3s all ease);
+  }
+
+  label.invalid .error {
+    display: block;
+  }
+
+  .success {
+    display: none;
+    color: #0f0;
+  }
+}
+
+//--------------------------------------------------------------
+//                    Responsive Layout
+//--------------------------------------------------------------
+@media (max-width: 979px) {
+  .subscribe-form {
+    label.name,
+    label.email {
+      display: block;
+    }
+
+    // * + label,
+    // * + a[data-type='submit']{
+    //   margin-top: 10px;
+    // }
+  }
+}
+

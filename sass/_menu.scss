@@ -1,0 +1,151 @@
+/*========================   Menu   ==========================*/
+
+//--------------------------------------------------------------
+//                       Menu Styles
+//--------------------------------------------------------------
+.sf-menu {
+  @include clearfix;
+  display: inline-block;
+
+  > li {
+    position: relative;
+    float: left;
+
+    & + li {
+      margin-left: 30px;
+    }
+  }
+
+  a {
+    display: block;
+
+    &:hover:after {
+      display: none;
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                     Menu item styles
+//--------------------------------------------------------------
+.sf-menu {
+
+  &__item{
+
+    &--link {
+      color: $secondary3;
+      font-size: 13px;
+      font-family: $font;
+
+      text-transform: uppercase;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+     // .sfHover > a,
+     // > a:hover {
+     //   color: $primary;
+     //  }
+  }
+
+  // .sfHover > a {
+  //   color: #7B7A7A;
+  //   background: map-get($scheme, primary);
+  // }
+
+   .active > a {
+      color: $primary !important;
+    }
+}
+
+//--------------------------------------------------------------
+//                   Sub menu lvl1 styles
+//--------------------------------------------------------------
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 235px;
+  margin-top: 10px;
+  padding: 10px 0 10px;
+  background: #FFF;
+  z-index: 2;
+  @include box-sizing(border-box);
+}
+
+//--------------------------------------------------------------
+//                 Sub menu lvl1 item styles
+//--------------------------------------------------------------
+.submenu {
+
+  &__item {
+
+    &--link {
+      color: #FFF;
+      background: $secondary;
+    }
+
+    &.sfHover > a, > a:hover {
+      color: #FFF;
+      background: $secondary;
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                   Sub menu lvl2 styles
+//--------------------------------------------------------------
+.sub-submenu {
+  position: static;
+  top: 100%;
+  width: auto;
+  margin-top: 0;
+  padding: 0;
+  z-index: 4;
+}
+
+//--------------------------------------------------------------
+//                 Sub menu lvl2 item styles
+//--------------------------------------------------------------
+.sub-submenu {
+
+  &__item {
+
+    &--link {
+      color: red;
+      background: $secondary;
+    }
+
+    &.sfHover > a, > a:hover {
+      color: #FFF;
+      background: $secondary;
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                      sf-with-ul styles
+//--------------------------------------------------------------
+.sf-menu > li > .sf-with-ul {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    margin-left: -6px;
+    content: $fa-caret-down;
+    font: 400 12px/12px $fa;
+  }
+}
+
+//--------------------------------------------------------------
+//                        Responsive
+//--------------------------------------------------------------
+@media (max-width: 767px) {
+  .sf-menu {
+    display: none;
+  }
+}

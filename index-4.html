@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+
+
+  <!--[if lt IE 9]>
+  <html class="lt-ie9">
+  <div style=' clear: both; text-align:center; position: relative;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+      <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+  </div>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <script src='js/device.min.js'></script>
+
+</head>
+<body>
+<div class="page">
+
+<!--========================================================
+                            HEADER
+  =========================================================-->
+  <header class="header">
+    <div class="header__top bg-primary">
+      <div class="container">
+          <div class="row multi-columns-row">
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <div class="inline-box-1">
+                  <div class="inline-box-1__content">
+                      <div class="img_container">
+                          <div class="img">
+                            <img src="images/icon-1.png" alt="img">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inline-box-1__content">
+                    <p>Принимаем заказы круглосуточно</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                 <div class="inline-box-1">
+                  <div class="inline-box-1__content">
+                      <div class="img_container">
+                           <div class="img">
+                            <img src="images/icon-2.png" alt="img">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inline-box-1__content">
+                    <p>Доставка по всей России</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                 <div class="inline-box-1">
+                  <div class="inline-box-1__content">
+                      <div class="img_container">
+                           <div class="img">
+                              <img src="images/icon-3.png" alt="img">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inline-box-1__content">
+                    <p>Оплата при получении</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                  <div class="inline-box-1">
+                    <div class="inline-box-1__content">
+                        <div class="img_container">
+                             <div class="img">
+                            <img src="images/icon-4.png" alt="img">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="inline-box-1__content">
+                      <p>Гарантия 3 года</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="header__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                  <div class="brand top-brand">
+                    <h1 class="brand__name">
+                      <a class="brand__name--link"  href="index.html">
+                        <img src="images/logo.png" alt="img">
+                      </a>
+                    </h1>
+                  </div>
+              </div>
+              <div class="col-xs-5 col-sm-3 col-md-3 col-lg-3">
+                <p class="text-1">Интернет-магазин модульных картин,постеров и репродукций.Фотопечать и роспись маслом</p>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="contacts">
+                    <a href="callto:88007757637" class="contacts__link">8 (800) 775-76-37 ,</a>
+                    <a href="callto:88007757637" class="contacts__link">8 (800) 775-76-37</a>
+                    <p class="contacts__info">Пн - Пт 9:00 - 19:00, Сб, Вс - выходной.Звонок по РФ бесплатный</p>
+                    <a href="callto:" class="contacts__freecall">Заказать бесплатный звонок</a>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+        <!-- Shoping-cart -->
+                <div class="inline-box-2">
+                  <div class="inline-box-2__content">
+                    <p><a href="#">Корзина</a></p>
+                  </div>
+                    <div class="inline-box-2__content">
+                      <div class="img_conteiner shoping-cart">
+                        <img src="images/shoping-icon.png" alt="">
+                        <span class="shoping-cart__counter">2</span>
+                      </div>
+                    </div>
+                </div>
+         <!-- //Shoping-cart -->
+              </div>
+            </div>
+          </div>
+      </div>
+    <div class="header__main bg-secondary">
+      <div id="stuck_container" class="stuck_container">
+        <div class="container">
+          <div class="row">
+            <form class="search-form" action="search.php" method="GET" accept-charset="utf-8">
+              <label class="search-form_label">
+                <input class="search-form_input" type="text" name="s" autocomplete="off" placeholder="Поиск"/>
+                <span class="search-form_liveout"></span>
+              </label>
+                <button class="search-form_submit fa-search" type="submit"></button>
+            </form>
+            <nav class="header__nav nav">
+              <ul class="sf-menu" data-type="navbar">
+                <li class="sf-menu__item sf-menu__active">
+                  <a href="index.html" class="sf-menu__item--link sf-menu__active--link">О нас</a>
+                </li>
+                <li class="sf-menu__item">
+                  <a href="index-1.html" class="sf-menu__item--link">Каталог Товаров</a>
+                </li>
+                <li class="sf-menu__item">
+                  <a href="index-2.html" class="sf-menu__item--link">Гарантии</a>
+                </li>
+                <li class="sf-menu__item">
+                  <a href="index-3.html" class="sf-menu__item--link">Доставка и Оплата</a>
+                </li>
+                <li class="sf-menu__item active">
+                  <a href="index-4.html" class="sf-menu__item--link">Фото Товара</a>
+                </li>
+                <li class="sf-menu__item">
+                  <a href="index-5.html" class="sf-menu__item--link">Сотрудничество</a>
+                </li>
+                <li class="sf-menu__item">
+                  <a href="index-5.html" class="sf-menu__item--link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!--========================================================
+                            CONTENT
+  =========================================================-->
+ <main class="main">
+        <section class="well">
+            <div class="container">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__item--link first">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__item--link">Модульные картинки</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__item--link">Цветы</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__item--link">Модульная картина 261 "Розовый сад"</a>
+                </li>
+              </ul>
+            </div>
+        </section>
+        <section class="well">
+            <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="rembo-gallery">
+
+                      <div class="label-wrapp">
+                        <span class="label new">New</span>
+                        <span class="label percent">40%</span>
+                      </div>
+                        <div class="owl-carousel">
+                            <img src="images/Gallerysmall-01.jpg" data-medium-img="images/Gallerybig-01.jpg" data-big-img="images/Gallerybig-01.jpg" alt="img">
+                            <img src="images/Gallerysmall-02.jpg" data-medium-img="images/Gallerysmall-02.jpg" data-big-img="images/Gallerysmall-02.jpg" alt="img">
+                            <img src="images/Gallerysmall-03.jpg" data-medium-img="images/Gallerysmall-03.jpg" data-big-img="images/Gallerysmall-03.jpg" alt="img">
+                            <img src="images/Gallerysmall-04.jpg" data-medium-img="images/Gallerysmall-04.jpg" data-big-img="images/Gallerysmall-04.jpg" alt="img">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="picture-settings">
+                      <h3>Модульная картина 261 "Розовый сад"</h3>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                              <div class="size-picture">
+                                <h4>Выберите размер:</h4>
+                                  <div class="size-box active-box">
+                                    <div class="size-box__cnt">
+                                      <b>110х70 см</b><span> (20х53, 20х61, 20х70, 20х61, 20х53)</span>
+                                    </div>
+                                  </div>
+                                   <div class="size-box">
+                                    <div class="size-box__cnt">
+                                      <b>140 90 см</b><span> (20х53, 20х61, 20х70, 20х61, 20х53)</span>
+                                    </div>
+                                  </div>
+                                   <div class="size-box">
+                                    <div class="size-box__cnt">
+                                      <b>170х109 см</b><span> (20х53, 20х61, 20х70, 20х61, 20х53)</span>
+                                    </div>
+                                  </div>
+                                   <div class="size-box">
+                                    <div class="size-box__cnt">
+                                      <b>Другой размер или форма картин</b>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <div class="type-picture">
+                                  <h4>Выберите тип:</h4>
+                                    <div class="accordion-2">
+                                      <div class="accordion_title">
+                                        <div class="accordion_title__cnt type-1">
+                                          <b>HD фотопечать</b>
+                                        </div>
+                                      </div>
+                                      <div class="accordion_cnt-box">
+                                        <p>
+                                          Текст с информацией о фотопечати которую выбрали, текст с инфой о фотопечати которую выбрали.Текст с информацией о фотопечати.
+                                        </p>
+                                      </div>
+
+                                      <div class="accordion_title">
+
+                                          <div class="accordion_title__cnt type-2">
+                                            <b>Роспись маслом</b>
+                                        </div>
+                                      </div>
+                                      <div class="accordion_cnt-box">
+                                        <p>
+                                          Текст с информацией о фотопечати которую выбрали, текст с инфой о фотопечати которую выбрали.Текст с информацией о фотопечати.
+                                        </p>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="material-info">
+                                  <p class="material-info__cnt">
+                                    <b>Материалы изготовления: </b>деревянный подрамник, художественный холст, крепления-крокодилы.
+                                  </p>
+                                </div>
+                                <div class="picture-settings__footer">
+                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                      <div class="footer-price">
+                                        <span class="old-price">7200 руб.</span>
+                                        <span class="new-price">4 320 <span>руб</span>.</span>
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                      <div class="btn-block">
+                                        <a href="#" class="btn">В корзину</a>
+                                        <a href="" class="btn-2">Быстрый Заказ</a>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="well">
+          <div class="container">
+              <div class="row">
+                <div class="banners-wrapp-2">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="banner">
+                      <a href="#"><img src="images/banner02.jpg" alt="img"></a>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="banner">
+                      <a href="#"><img src="images/banner03.jpg" alt="img"></a>
+                   </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section class="well">
+            <div class="container">
+                <div class="title-body title-body-2">
+                  <h3 class="title-body__head">рекомендованные товары</h3>
+                  <a href="#" class="btn-more">Подробнее о качестве нашего товара</a>
+                  <hr class="hr-2">
+                </div>
+                <div class="row multi-columns-row">
+                  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                    <div class="quality-box center">
+                      <div class="img circle">
+                        <img src="images/img-07.jpg" alt="img">
+                      </div>
+                        <h4 class="quality-box__name"><a href="#">Качество печати</a></h4>
+                        <p class="quality-box__cnt">
+                         Модульные картины - разделенные на части фотографии или репродукции картины.Такие картины смотрятся красиво.
+                        </p>
+                    </div>
+                  </div>
+                   <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                    <div class="quality-box center">
+                      <div class="img circle">
+                        <img src="images/img-08.jpg" alt="img">
+                      </div>
+                        <h4 class="quality-box__name"><a href="#">Работа Маслом</a></h4>
+                        <p class="quality-box__cnt">
+                         Модульные картины - разделенные на части фотографии или репродукции картины.Такие картины смотрятся красиво.
+                        </p>
+                    </div>
+                  </div>
+                   <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                    <div class="quality-box center">
+                      <div class="img circle">
+                        <img src="images/img-09.jpg" alt="img">
+                      </div>
+                        <h4 class="quality-box__name"><a href="#">Подрамник</a></h4>
+                        <p class="quality-box__cnt">
+                         Модульные картины - разделенные на части фотографии или репродукции картины.Такие картины смотрятся красиво.
+                        </p>
+                    </div>
+                  </div>
+                   <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                    <div class="quality-box center">
+                      <div class="img circle">
+                        <img src="images/img-10.jpg" alt="img">
+                      </div>
+                        <h4 class="quality-box__name"><a href="#">Натяжка</a></h4>
+                        <p class="quality-box__cnt">
+                         Модульные картины - разделенные на части фотографии или репродукции картины.Такие картины смотрятся красиво.
+                        </p>
+                    </div>
+                  </div>
+                   <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                    <div class="quality-box center">
+                      <div class="img circle">
+                        <img src="images/img-11.jpg" alt="img">
+                      </div>
+                        <h4 class="quality-box__name"><a href="#">Крепления</a></h4>
+                        <p class="quality-box__cnt">
+                         Модульные картины - разделенные на части фотографии или репродукции картины.Такие картины смотрятся красиво.
+                        </p>
+                    </div>
+                  </div>
+                   <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                    <div class="quality-box center">
+                      <div class="img circle">
+                        <img src="images/img-12.jpg" alt="img">
+                      </div>
+                        <h4 class="quality-box__name"><a href="#">Холст</a></h4>
+                        <p class="quality-box__cnt">
+                         Модульные картины - разделенные на части фотографии или репродукции картины.Такие картины смотрятся красиво.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="well">
+            <div class="container">
+                  <div class="title-body title-body-2">
+                    <h3 class="title-body__head">рекомендованные товары</h3>
+                    <a href="#" class="btn-more">Смотреть все отзывы</a>
+                    <hr class="hr-2">
+                  </div>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="works-block center">
+                      <img src="images/img-13.jpg" alt="img">
+                      <div class="works-block__name"><a href="#">Елена Краснова(Москва)</a></div>
+                      <div class="works-block__data">
+                        <time>21.08.2016</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="works-block center">
+                      <img src="images/img-14.jpg" alt="img">
+                      <div class="works-block__name"><a href="#">Елена Краснова(Москва)</a></div>
+                      <div class="works-block__data">
+                        <time>21.08.2016</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="works-block center">
+                      <img src="images/img-15.jpg" alt="img">
+                      <div class="works-block__name"><a href="#">Елена Краснова(Москва)</a></div>
+                      <div class="works-block__data">
+                        <time>21.08.2016</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="works-block center">
+                      <img src="images/img-16.jpg" alt="img">
+                      <div class="works-block__name"><a href="#">Елена Краснова(Москва)</a></div>
+                      <div class="works-block__data">
+                        <time>21.08.2016</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="well">
+            <div class="container">
+              <div class="row">
+               <div class="title-body title-body-2">
+                    <h3 class="title-body__head">Информация</h3>
+                    <a href="#" class="btn-more">О нас</a>
+                    <hr class="hr-2">
+                  </div>
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="text-box">
+                    <p>ам хотелось бы разнообразить обыденный интерьер новыми акцентами? Тогда, модульная картина «Розовый сад» станет вашим незаменимым помощником. Полотно великолепно впишется в оформление офисного и жилого помещения, подчеркивая уникальность интерьера и изысканный вкус владельцев.</p>
+                    <p>Модульная картина «Розовый сад» выполнена из пяти полотен. От центрального полотна симметрично расходятся изображения меньшего размера, создавая целостную панорамную картину, которая переносит созерцателя на сказочную аллею цветущего сада, утопающего в лучах солнца. Такая картина непременно станет интерьерной изюминкой.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="well well__09">
+            <div class="container">
+                <div class="title-body title-body-2">
+                  <h3 class="title-body__head">Похожие товары</h3>
+                  <hr class="hr-2">
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="product">
+                      <div class="label-wrapp">
+                        <span class="label new">New</span>
+                        <span class="label percent">40%</span>
+                      </div>
+                      <div class="product__image">
+                        <a href="#">
+                          <img src="images/img-01.jpg" alt="img">
+                        </a>
+                      </div>
+                      <div class="product__name">
+                        <span>Модульная картина 40</span>
+                        <h4><a href="#">"Ночная набережная"</a></h4>
+                      </div>
+                      <div class="product__priced">
+                        <span class="old-price">3800 руб.</span>
+                        <span class="new-price">4 200 <span>руб</span>.</span>
+                      </div>
+                      <a href="#" class="btn">Быстрый заказ</a>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <div class="product">
+                        <div class="label-wrapp">
+                          <span class="label new">New</span>
+                        </div>
+                        <div class="product__image">
+                          <a href="#">
+                            <img src="images/img-02.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="product__name">
+                          <span>Модульная картина 40</span>
+                          <h4><a href="#">"Ночная набережная"</a></h4>
+                        </div>
+                        <div class="product__priced">
+                          <span class="old-price">3800 руб.</span>
+                          <span class="new-price">4 200 <span>руб</span>.</span>
+                        </div>
+                        <a href="#" class="btn">Быстрый заказ</a>
+                      </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="product">
+                      <div class="label-wrapp">
+                        <span class="label hit">Хит</span>
+                        <span class="label percent">40%</span>
+                      </div>
+                      <div class="product__image">
+                        <a href="#">
+                          <img src="images/img-03.jpg" alt="img">
+                        </a>
+                      </div>
+                      <div class="product__name">
+                        <span>Модульная картина 40</span>
+                        <h4><a href="#">"Ночная набережная"</a></h4>
+                      </div>
+                      <div class="product__priced">
+                        <span class="old-price">3800 руб.</span>
+                        <span class="new-price">4 200 <span>руб</span>.</span>
+                      </div>
+                      <a href="#" class="btn">Быстрый заказ</a>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <div class="product">
+                        <div class="label-wrapp">
+                          <span class="label new">New</span>
+                        </div>
+                        <div class="product__image">
+                          <a href="#">
+                            <img src="images/img-04.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="product__name">
+                          <span>Модульная картина 40</span>
+                          <h4><a href="#">"Ночная набережная"</a></h4>
+                        </div>
+                        <div class="product__priced">
+                          <span class="old-price">3800 руб.</span>
+                          <span class="new-price">4 200 <span>руб</span>.</span>
+                        </div>
+                        <a href="#" class="btn">Быстрый заказ</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="well well__07 bg-secondary">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                      <div class="brand foot-brand">
+                            <h1 class="brand__name">
+                              <a class="brand__name--link"  href="#">
+                                <img src="images/logo.png" alt="img">
+                              </a>
+                            </h1>
+                      </div>
+                      <div class="about">
+                        <strong class="about__info">
+                          Интернет-магазин модульных картин, постерови репродукций.Фотопечать и роспись маслом
+                        </strong>
+                        <p class="about__cnt">© <span id="copyright-year"></span> Интернет-магазин модульных картин <a href="#">Modulka.ru</a> Все права защищены.</p>
+                      </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                      <nav class="foot-nav">
+                        <ul class="foot-menu">
+                          <li class="foot-menu__item"><a href="#" class="foot-menu__item--link">О компании и продукции</a></li>
+                          <li class="foot-menu__item"><a href="#" class="foot-menu__item--link">Гарантии</a></li>
+                          <li class="foot-menu__item"><a href="#" class="foot-menu__item--link">Доставка и олата</a></li>
+                          <li class="foot-menu__item"><a href="#" class="foot-menu__item--link">Возврат и обмен товаров</a></li>
+                          <li class="foot-menu__item"><a href="#" class="foot-menu__item--link">Сотрудничество</a></li>
+                          <li class="foot-menu__item"><a href="#" class="foot-menu__item--link">Отзывы</a></li>
+                          <li class="foot-menu__item"><a href="#" class="foot-menu__item--link">Рекомендации</a></li>
+                        </ul>
+                      </nav>
+                  </div>
+                  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                      <div class="contacts foot-contact">
+                          <a href="callto:88007757637" class="contacts__link">8 (800) 775-76-37</a> <br>
+                          <a href="callto:88007757637" class="contacts__link foot-contact__link">8 (800) 775-76-37</a>
+                          <p class="contacts__info foot-contact__info">Пн - Пт 9:00 - 19:00, Сб, Вс - выходной. Звонок по РФ бесплатный</p>
+                      </div>
+                      <div class="social">
+                        <h4>Следите за нами:</h4>
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                              <a href="#" class="social-list__item--link">
+                                <img src="images/social-icon01.png" alt="img">
+                              </a></li>
+                            <li class="social-list__item">
+                              <a href="#" class="social-list__item--link">
+                                <img src="images/social-icon02.png" alt="img">
+                              </a>
+                            </li>
+                            <li class="social-list__item">
+                              <a href="#" class="social-list__item--link">
+                                <img src="images/social-icon03.png" alt="img">
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                  <!-- Subscribe -->
+                    <div class="subscribe-block">
+                        <h4>Узнайте о скидках и акциях <br> Modulka.ru первыми</h4>
+                        <p class="subscribe-block__cnt">
+                            <a href="#" class="subscribe-block__cnt--link">Подпишитесь</a> и получите картину в подарок!
+                        </p>
+                          <form id="subscribe-form" class="subscribe-form">
+                           <label class="email">
+                              <input type="email" value="Ваша эл.почта">
+                              <!-- <span class="error">*Ошибка</span>
+                              <span class="success">Удачно</span> -->
+                              <a data-type="submit" href="#"></a>
+                            </label>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </section>
+
+</main>
+
+  <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer class="footer bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3  col-lg-6 col-lg-offset-3 ">
+          <ul class="pay-systems">
+            <li class="pay-systems__item">
+              <a href="#" class="pay-systems__item--link">
+                <img src="images/pay-icon01.png" height="30" width="102" alt="img">
+              </a>
+            </li>
+            <li class="pay-systems__item">
+              <a href="#" class="pay-systems__item--link">
+                <img src="images/pay-icon02.png" alt="img">
+              </a>
+            </li>
+            <li class="pay-systems__item">
+              <a href="#" class="pay-systems__item--link">
+                <img src="images/pay-icon03.png" alt="img">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  </footer>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
