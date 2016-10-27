@@ -1,54 +1,43 @@
 @charset "UTF-8";
 @import url(animate.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
 @font-face {
   font-family: OpenSansRegular;
-  src: url(../fonts/OpenSansRegular.ttf);
-  font-weight: normal; }
-@font-face {
-  font-family: OpenSansRegular;
-  src: url(../fonts/OpenSansRegular.eot);
-  font-weight: normal; }
-@font-face {
-  font-family: OpenSansRegular;
-  src: url(../fonts/OpenSansRegular.woff);
-  font-weight: normal; }
+  src: url('../fonts/OpenSansRegular.eot');
+  src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+       url('../fonts/OpenSansRegular.woff2') format('woff2'),
+       url('../fonts/OpenSansRegular.woff') format('woff'),
+       url('../fonts/OpenSansRegular.ttf') format('truetype'),
+       url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
 @font-face {
   font-family: OpenSansSemiBold;
-  src: url(../fonts/OpenSansSemiBold.ttf);
-  font-weight: normal; }
+  src: url('../fonts/OpenSansSemiBold.eot');
+  src: url('../fonts/OpenSansSemiBold.eot') format('embedded-opentype'),
+       url('../fonts/OpenSansSemiBold.woff2') format('woff2'),
+       url('../fonts/OpenSansSemiBold.woff') format('woff'),
+       url('../fonts/OpenSansSemiBold.ttf') format('truetype'),
+       url('../fonts/OpenSansSemiBold.svg#OpenSansSemiBold') format('svg');
+}
 @font-face {
-  font-family: OpenSansSemiBold;
-  src: url(../fonts/OpenSansSemiBold.eot);
-  font-weight: normal; }
-@font-face {
-  font-family: OpenSansSemiBold;
-  src: url(../fonts/OpenSansSemiBold.woff);
-  font-weight: normal; }
-@font-face {
-  font-family: OpenSansBold;
-  src: url(../fonts/OpenSansBold.ttf);
-  font-weight: normal; }
-@font-face {
-  font-family: OpenSansBold;
-  src: url(../fonts/OpenSansBold.eot);
-  font-weight: normal; }
-@font-face {
-  font-family: OpenSansBold;
-  src: url(../fonts/OpenSansBold.woff);
-  font-weight: normal; }
+    font-family: OpenSansBold;
+    src: url('../fonts/OpenSansBold.eot');
+    src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansBold.woff2') format('woff2'),
+         url('../fonts/OpenSansBold.woff') format('woff'),
+         url('../fonts/OpenSansBold.ttf') format('truetype'),
+         url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+}
 @font-face {
   font-family: OpenSansItalic;
-  src: url(../fonts/OpenSansItalic.ttf);
-  font-weight: normal; }
-@font-face {
-  font-family: OpenSansItalic;
-  src: url(../fonts/OpenSansItalic.eot);
-  font-weight: normal; }
-@font-face {
-  font-family: OpenSansItalic;
-  src: url(../fonts/OpenSansItalic.woff);
-  font-weight: normal; }
+  src: url('../fonts/OpenSansItalic.eot');
+  src: url('../fonts/OpenSansItalic.eot') format('embedded-opentype'),
+       url('../fonts/OpenSansItalic.woff2') format('woff2'),
+       url('../fonts/OpenSansItalic.woff') format('woff'),
+       url('../fonts/OpenSansItalic.ttf') format('truetype'),
+       url('../fonts/OpenSansItalic.svg#OpenSansItalic') format('svg');
+}
 @font-face {
   font-family: Times_New_Roman;
   src: url(../fonts/Times_New_Roman.ttf);
@@ -701,6 +690,10 @@ dl .link {
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
+  .picture-settings h4{
+    text-transform: capitalize;
+  }
+
 .picture-settings__footer:before, .picture-settings__footer:after {
   display: table;
   content: "";
@@ -829,26 +822,51 @@ dl .link {
   .btn-2:active {
     background: #84011c; }
 
+  .add-basket{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #b70127;
+    color: #b70127;
+    position: relative;
+    min-width: 145px;
+    text-transform: uppercase;
+    font: 11px "OpenSansBold", sans-serif;
+    padding: 7px 0;
+    text-indent: 8px;
+    border-color: #4c4c4c;
+    color: #4c4c4c;
+  }
+  .add-basket:after{
+    content: none;
+  }
+  .grey-basket{
+    width: 15px;
+    height: 18px;
+    background: url("../images/grey-basket.png");
+  }
+.middle{
+  display: inline-block;
+  vertical-align: middle;
+}
 /*==================      Breadcrumbs      ======================*/
 .breadcrumbs {
-  padding: 25px; }
+  padding: 25px 0; }
   .breadcrumbs__item {
     display: inline-block;
     margin: 0; }
     .breadcrumbs__item--link {
       position: relative;
       display: block;
-      padding: 0 8px;
       font-size: 11px;
       line-height: 30px;
       color: #9e9e9e; }
       .breadcrumbs__item--link:before {
         content: "";
-        position: absolute;
-        top: 40%;
-        left: -2px;
-        display: block;
+        display: inline-block;
+        vertical-align: middle;
         width: 3px;
+        margin-left: 4px;
+        margin-right: 7px;
         height: 6px;
         background: url("../images/bread-arrow.png"); }
   .breadcrumbs .first:before {
@@ -1628,7 +1646,7 @@ input:focus:-ms-input-placeholder {
 
 .rembo-gallery .rembo-medium-wrap {
   position: relative;
-  height: 300px;
+  height: 410px;
   width: 100%;
   overflow: hidden; }
 
@@ -3169,6 +3187,36 @@ Multi-columns-row
 
 .subscribe-block h4{
   font-size: 13px;
+}
+.product-price .old-price{
+  font-size: 20px;
+}
+.product-price .new-price{
+  font-size: 28px;
+}
+.product-price .new-price span{
+  font-size: 23px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.picture-settings > h3{
+  line-height: 1;
+}
+.picture-settings{
+  position: relative;
+  top: -2px;
+}
+.banner a img{
+  width: auto;
+}
+.well-block{
+  padding-left: 30px;
+}
+.well-wrapp{
+  margin-left: -30px;
+}
+.type-picture{
+  min-height: 310px;
 }
 @media(min-width: 1200px){
   .top-panel-item{
