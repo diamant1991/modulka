@@ -10,6 +10,7 @@
        url('../fonts/OpenSansRegular.woff') format('woff'),
        url('../fonts/OpenSansRegular.ttf') format('truetype'),
        url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+  font-weight: normal;
 }
 @font-face {
   font-family: OpenSansSemiBold;
@@ -19,6 +20,7 @@
        url('../fonts/OpenSansSemiBold.woff') format('woff'),
        url('../fonts/OpenSansSemiBold.ttf') format('truetype'),
        url('../fonts/OpenSansSemiBold.svg#OpenSansSemiBold') format('svg');
+  font-weight: normal;
 }
 @font-face {
     font-family: OpenSansBold;
@@ -28,6 +30,7 @@
          url('../fonts/OpenSansBold.woff') format('woff'),
          url('../fonts/OpenSansBold.ttf') format('truetype'),
          url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+  font-weight: normal;
 }
 @font-face {
   font-family: OpenSansItalic;
@@ -37,6 +40,7 @@
        url('../fonts/OpenSansItalic.woff') format('woff'),
        url('../fonts/OpenSansItalic.ttf') format('truetype'),
        url('../fonts/OpenSansItalic.svg#OpenSansItalic') format('svg');
+  font-weight: normal;
 }
 @font-face {
   font-family: Times_New_Roman;
@@ -471,10 +475,10 @@ dl .link {
     margin-top: 10px;
     padding: 0 15px; }
     .product__name h4 {
-      margin-top: 8px;
+      margin-top: 0;
       text-transform: none; }
   .product__priced {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0 15px; }
   .product .btn {
     margin-top: 20px; }
@@ -494,7 +498,8 @@ dl .link {
     border-radius: 3px;
     font-size: 10px;
     color: #fff;
-    min-width: 40px;
+    min-width: 35px;
+    line-height: 2.1;
     text-transform: capitalize;
     display: block;
     margin-bottom: 5px;
@@ -743,7 +748,7 @@ dl .link {
     background-color: #b70127; }
 
 .material-info {
-  padding: 25px 0; }
+  padding: 15px 0; }
 
 .footer-price {
   text-align: left;
@@ -836,6 +841,13 @@ dl .link {
     border-color: #4c4c4c;
     color: #4c4c4c;
   }
+  .add-basket:hover{
+    background-color: #4c4c4c;
+    color: #fff;
+  }
+  .add-basket:hover .grey-basket{
+    background: url(../images/icon-btn-hover.png)no-repeat;
+  }
   .add-basket:after{
     content: none;
   }
@@ -851,13 +863,16 @@ dl .link {
 /*==================      Breadcrumbs      ======================*/
 .breadcrumbs {
   padding: 25px 0; }
+  .breadcrumbs_card{
+    padding: 15px 0;
+  }
   .breadcrumbs__item {
     display: inline-block;
     margin: 0; }
     .breadcrumbs__item--link {
       position: relative;
       display: block;
-      font-size: 11px;
+      font-size: 12px;
       line-height: 30px;
       color: #9e9e9e; }
       .breadcrumbs__item--link:before {
@@ -2653,6 +2668,9 @@ input:focus:-ms-input-placeholder {
   min-height: 56px;
   margin-top: 11px;
   padding: 9px 31px 8px 58px; }
+  .accordion-2 .accordion_title:hover{
+    outline: 1px solid #b70127;
+  }
   .accordion-2 .accordion_title__cnt {
     position: relative;
     line-height: 20px;
@@ -2782,7 +2800,12 @@ input:focus:-ms-input-placeholder {
 /*==================    Right-Col       ======================*/
 .right-col .breadcrumbs {
   padding: 0;
+  margin-top: -10px;
   clear: both; }
+  .right-col .breadcrumbs + .title-body{
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 .right-col .title-body {
   border: none; }
 .right-col .info-block {
@@ -3195,7 +3218,7 @@ Multi-columns-row
   font-size: 28px;
 }
 .product-price .new-price span{
-  font-size: 23px;
+  font-size: 26px;
   display: inline-block;
   vertical-align: bottom;
 }
