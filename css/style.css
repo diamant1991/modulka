@@ -293,6 +293,12 @@ dl .link {
     display: inline-block;
     color: #b70127;
     text-transform: uppercase; }
+    .contacts__link{
+      margin-left: 15px;
+    }
+    .contacts__link:first-child{
+      margin-left: 0;
+    }
   .contacts__info {
     font-size: 11px;
     color: #787878; }
@@ -3360,6 +3366,11 @@ Multi-columns-row
   }
   .subscribe-block{
     width: 215px;
+  }
+}
+@media(max-width: 991px){
+  .contacts__link{
+    margin-left: 0;
   }
 }
 @media(max-width: 767px){
