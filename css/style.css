@@ -2553,7 +2553,8 @@ input:focus:-ms-input-placeholder {
       width: 36px;
       height: 29px;
       background: center center; }
-  .accordion_header:hover {
+  .accordion_header:hover,
+  .accordion_header.active {
     background: #b70127; }
   .accordion_header .icon-1:after {
     background: url("../images/tabs-icon.png") no-repeat; }
@@ -2712,6 +2713,15 @@ input:focus:-ms-input-placeholder {
   margin-top: 10px;
   padding: 10px 0 23px; }
 
+.accordion_cnt{
+  display: none;
+}
+.accordion_header.active +.accordion_cnt{
+  display: block;
+}
+.accordion_header-1.active +.accordion_cnt{
+  display: block;
+}
 /*========================================================
                      HEADER  Section
 =========================================================*/
