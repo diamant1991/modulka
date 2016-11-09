@@ -2575,12 +2575,17 @@ input:focus:-ms-input-placeholder {
   cursor: pointer; }
   .accordion-1 .ui-accordion-header:after {
     position: absolute;
-    top: 18px;
-    right: 20px;
-    content: "";
+    bottom: auto;
+    left: auto;
+    top: 18px !important;
+    right: 20px !important;
+    content: "" !important;
     display: block;
     width: 12px;
     height: 6px;
+    -webkit-transform: none;
+    visibility: visible;
+    transform: none;
     background: url("../images/arrow_down.png") no-repeat; }
   .accordion-1 .ui-accordion-header-active span {
     color: #b70127; }

@@ -213,52 +213,52 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
 
 /* JQuery UI Accordion
  ========================================================*/
-;
-(function ($) {
-    var o = $('.accordion');
-    if (o.length > 0) {
-        include('js/jquery.ui.accordion.min.js');
+// ;
+// (function ($) {
+//     var o = $('.accordion');
+//     if (o.length > 0) {
+//         include('js/jquery.ui.accordion.min.js');
 
-        $(document).ready(function () {
-            o.accordion({
-                active: false,
-                header: '.accordion_header',
-                heightStyle: 'content',
-                collapsible: true
-            });
-        });
-    }
-})(jQuery);
-;
+//         $(document).ready(function () {
+//             o.accordion({
+//                 active: false,
+//                 header: '.accordion_header',
+//                 heightStyle: 'content',
+//                 collapsible: true
+//             });
+//         });
+//     }
+// })(jQuery);
+// ;
 
-(function ($) {
-    var o = $('.accordion-1');
-    if (o.length > 0) {
-        include('js/jquery.ui.accordion.min.js');
+// (function ($) {
+//     var o = $('.accordion-1');
+//     if (o.length > 0) {
+//         include('js/jquery.ui.accordion.min.js');
 
-        $(document).ready(function () {
-            o.accordion({
-                active: false,
-                header: '.accordion_header-1',
-                heightStyle: 'content',
-                collapsible: true
-            });
-        });
-    }
-})(jQuery);
+//         $(document).ready(function () {
+//             o.accordion({
+//                 active: false,
+//                 header: '.accordion_header-1',
+//                 heightStyle: 'content',
+//                 collapsible: true
+//             });
+//         });
+//     }
+// })(jQuery);
 
-(function ($) {
-    var o = $('.accordion-2');
-    if (o.length > 0) {
-        include('js/jquery.ui.accordion.min.js');
+// (function ($) {
+//     var o = $('.accordion-2');
+//     if (o.length > 0) {
+//         include('js/jquery.ui.accordion.min.js');
 
-        $(document).ready(function () {
-            o.accordion({
-                active: false,
-                header: '.accordion_title',
-                heightStyle: 'content',
-                collapsible: true
-            });
-        });
-    }
-})(jQuery);
+//         $(document).ready(function () {
+//             o.accordion({
+//                 active: false,
+//                 header: '.accordion_title',
+//                 heightStyle: 'content',
+//                 collapsible: true
+//             });
+//         });
+//     }
+// })(jQuery);
